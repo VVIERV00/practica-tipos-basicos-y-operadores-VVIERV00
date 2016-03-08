@@ -53,7 +53,6 @@ public class Apartado030102 extends Apartado {
 		int numeroPartes;
 		boolean deportivo;
 		boolean rebaja;
-		rebaja = true;
 		// rebaja = expresion booleana
 		System.out.println("Rebaja = " + rebaja);
 		// Fin modificacion

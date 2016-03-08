@@ -2,7 +2,7 @@
 
 <project name="Tipos basicos y operadores" basedir="." default="todo">
     <property name="src" value="src"/>
-    <property name="classes" value="classe/>
+    <property name="classes" value="classes"/>
     <property name="conf" value="etc"/>
 
     <property name="paquetes" value="es.unileon.prg.tema5"/>
