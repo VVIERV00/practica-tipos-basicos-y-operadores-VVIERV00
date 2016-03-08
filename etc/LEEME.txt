@@ -2,11 +2,18 @@ Practica P-VAR
 
 Alumno: Víctor de Vierna Valcarce
 
-Horas dedicadas: 4h
+Horas dedicadas: 4h 
 
 Problemas surgidos al realizar la practica:
 
  	1. Cuando Ant hace compilar a javac, éste devuelve numerosos errores que he ido revisando uno por uno. Los errores más comunes son de asignación de valores (dar int a un numero real, char's con más de un caracter, dar byte a una cadena demasiado grande...) también faltó inicializar ciertas variables o se utilizó malamente los valores reconocibles por Java como variables creadas.
- 	2. No fui capaaz de realizar un push al repositorio pero si a un fork improvisado de éste, que ahora deberé restaurar al servidor origin. 
+ 	2. No fui capaaz de realizar un push al repositorio pero si a un fork improvisado de éste, que ahora deberé restaurar al servidor origin.
+
+ //git remote -v me muestra los dos y puedo hacer push a cualquiera de ellos//
+
+	3. "incompatible types: possible lossy conversion from double to float":  float f = 1.3e22;
+		no entiendo por que 1.3e22 supone que es double (¿Será por la 'e'?)
+	4. Asignar una variable a otra de distinto tipo.
 
 Respuestas a la preguntas:
+	Google y la ayuda de los profesores son la solución de los problemas.
