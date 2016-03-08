@@ -72,6 +72,9 @@ public class Apartado030102 extends Apartado {
 		// Inicio modificacion
 		int segundos, horas, minutos;
 		int totalSegundos=56000;
+		segundos = 4;
+		minutos = 5;
+		horas = 6;
 		// Realizacion de calculos
 		System.out.println(horas+"h "+minutos+"m "+segundos+"s ");
 		// Fin modificacion

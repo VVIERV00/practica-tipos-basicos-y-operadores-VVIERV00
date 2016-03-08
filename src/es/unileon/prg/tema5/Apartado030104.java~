@@ -130,7 +130,7 @@ package es.unileon.prg.tema5;
          System.out.println("Short : " + s);    
          System.out.println("Int   : " + i);
       
-         double f = 1.3e22;   
+         float f = 1.3e22;   
          System.out.println("f: " + f);    
       }
    }
