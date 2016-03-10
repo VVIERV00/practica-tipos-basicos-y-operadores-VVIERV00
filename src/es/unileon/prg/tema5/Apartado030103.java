@@ -30,6 +30,7 @@ public class Apartado030103 extends Apartado {
 
 		double numero;
 		numero = Math.sqrt(256);
+		System.out.println("Numero: " + numero);
 		// Fin modificacion
 	}
 
@@ -47,6 +48,7 @@ public class Apartado030103 extends Apartado {
 		
 		double numer;
 		numer = Math.pow(9, 3);
+		System.out.println("Numer: " + numer);
 		// Fin modificacion
 	}
 
@@ -61,8 +63,9 @@ public class Apartado030103 extends Apartado {
 	public void ejercicio03() {
 		cabecera("03", "Generar numeros aleatorios");
 
-		// Inicio modificacion
-		// Fin modificacion
+		int resultado = (int) (Math.random()*15 + 5);
+		System.out.println("Numero aleatorio: " + resultado);
+	
 	}
 
 	/**
@@ -76,7 +79,9 @@ public class Apartado030103 extends Apartado {
 	public void ejercicio04() {
 		cabecera("04", "Calcular la superficie de un circulo");
 
-		// Inicio modificacion
-		// Fin modificacion
+		double area;
+		double radio = 10;
+		double res = 3.14 * Math.pow(radio, 2);
+		System.out.println("La superficie es: " + res);
 	}
 }

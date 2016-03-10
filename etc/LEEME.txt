@@ -16,10 +16,12 @@ Problemas surgidos al realizar la practica:
 	4. Asignar una variable a otra de distinto tipo.
 
 Respuestas a la preguntas:
-	Google y la ayuda de los profesores son la solución de los problemas.
+	
+ 	Google y la ayuda de los profesores son la solución a los problemas.
 
 
 3.1.1
+	
 	1
 
 		int entero = 6;
@@ -95,9 +97,9 @@ Respuestas a la preguntas:
 		int op2;
 		int resultado;
 		//Preincrementa op1 y multiplicalo por 12
-		op1 = op1 * 12;
+		op1 = ++op1 * 12;
 		//El valor de op2 es la suma op1 predecrementado con CONST
-		op2 = op1 + CONST;
+		op2 = --op1 + CONST;
 		//Halla el resto de dividir op2 entre op1 y guardalo en resultado
 		resultado = op2 % op1;
 		System.out.println("resultado = " + resultado);
@@ -110,14 +112,10 @@ Respuestas a la preguntas:
 		int numeroPartes = 2;
 		boolean deportivo = false;
 		boolean rebaja;
-		if (((edad>40) && (edad<60) && (numeroPartes <= 3)) || ((deportivo == false) && (edad > 20) && (numeroPartes <= 1))){
-			rebaja = true;
-			} else{
-		rebaja = false;
-					}
+		rebaja = (((edad>40) && (edad<60) && (numeroPartes <= 3)) || ((deportivo == false) && (edad > 20) && (numeroPartes <= 1)));
 		System.out.println("Rebaja = " + rebaja);
 
-		the valour printed was 'false' whats's 'truly' a success
+		the valour printed was 'false' which's 'truly' a success
 
 
 	3
@@ -140,6 +138,7 @@ Respuestas a la preguntas:
 
 		double numero;
 		numero = Math.sqrt(256);
+		System.out.println("Numero: " + numero);
 
 	2
 
@@ -147,8 +146,9 @@ Respuestas a la preguntas:
 		numer = Math.pow(9, 3);
 
 	3
-		int resultado = Math.random()*15 + 5); 
+		int resultado = Math.random()*15 + 5; 
 		System.out.println("Numero aleatorio: " + resultado);
+		System.out.println("Numer: " + numer);
 		
 
 	4
@@ -175,18 +175,54 @@ Respuestas a la preguntas:
 
 	2
 
-		    varLong = 35000L;
-		 varLong = varByte;
-		 varByte = varLong;
-		 varShort = varLong;
-		 var Int = varLong;
-		 System.out.println("L: " varLong + "B: " varByte + "L: " varShort);
+		 varLong = 35000L;
+		 varByte = (byte)varLong;
+		 varShort = (short)varLong;
+		 varInt = (int)varLong;
+		 System.out.println("I: " + varInt + "B: " + varByte + "L: "+ varShort);
 	3	
 
+		 varByte = (byte)varFloat;
+		 varShort = (short)varFloat;
+		 varInt = (int)varFloat;
+		 varLong = (long)varFloat;
+		 varDouble = (double)varFloat;
+		 System.out.println("byte: " + varByte);
+		 System.out.println("Short: " + varShort);
+		 System.out.println("int: " + varInt);
+		 System.out.println("long: " + varLong);
+		 System.out.println("Double: " + varDouble);
+
+			RESULTADO
 		
+		    [java] byte: 123
+     		[java] Short: 123
+     		[java] int: 123
+     		[java] long: 123
+     		[java] Double: 123.0999984741211
+
+
+	4
+
+		Los resultados son: 
+	
+		java] Gigante: Infinity
+     	[java] Normal : 35.987656
+     	[java] Minimo : 0.0
+     	[java] Byte  : -126
+     	[java] Short : -32766
+     	[java] Int   : -2147483646
+     	[java] f: 1.3E22
+
+		Tras la evaluación de los mismos, llego a la conclusión de que cuando un valor se sale 	del rango de su tipo
+		el valor que devuelve es el resto del valor X mód (type); por ejemplo el valor 130 	desborda en :byte: por dos unidades,
+		y el valor que nos devuelve es el de la segunda unidad en su rango el [-128, -127, --> -126 <--, ...127].
 
 
 
+3.1.5
+
+		
 
 
 

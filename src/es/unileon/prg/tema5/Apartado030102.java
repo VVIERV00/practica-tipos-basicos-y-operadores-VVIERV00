@@ -32,9 +32,9 @@ public class Apartado030102 extends Apartado {
 		int op2;
 		int resultado;
 		//Preincrementa op1 y multiplicalo por 12
-		op1 = op1 * 12;
+		op1 = ++op1 * 12;
 		//El valor de op2 es la suma op1 predecrementado con CONST
-		op2 = op1 + CONST;
+		op2 = --op1 + CONST;
 		//Halla el resto de dividir op2 entre op1 y guardalo en resultado
 		resultado = op2 % op1;
 		System.out.println("resultado = " + resultado);
@@ -54,14 +54,10 @@ public class Apartado030102 extends Apartado {
 
 		// Inicio modificacion
 		int edad =33;
-		int numeroPartes = 2;
+		int numeroPartes = 1;
 		boolean deportivo = false;
 		boolean rebaja;
-		if (((edad>40) && (edad<60) && (numeroPartes <= 3)) || ((deportivo == false) && (edad > 20) && (numeroPartes <= 1))){
-			rebaja = true;
-			} else{
-		rebaja = false;
-					}
+		rebaja = (((edad>40) && (edad<60) && (numeroPartes <= 3)) || ((deportivo == false) && (edad > 20) && (numeroPartes <= 1)));
 		System.out.println("Rebaja = " + rebaja);
 		// Fin modificacion
 	}
