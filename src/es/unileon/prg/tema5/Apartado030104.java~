@@ -44,15 +44,14 @@ package es.unileon.prg.tema5;
          varChar = 'H' ;
          varBoolean = true ;
       
-         varInt    = varShort;
-         varDouble = varFloat;  
-         varFloat  = varLong;
-         varLong   = varInt;
-         varLong   = 9223372036854775807L;
-         varFloat  = varLong;
-         varByte   = varShort;
-         varShort  = varInt;
-      
+         varInt    = varShort; //Valido  #1
+         varDouble = varFloat; //Valido 
+         varFloat  = varLong; //No valido, estamos atribuyendo un valor int a una variable float
+         varLong   = varInt; //Valido
+         varLong   = 9223372036854775807L; //Valido
+         varFloat  = varLong; //No valido, estamos atribuyendo un valor int a una variable float
+         varByte   = varShort; //varInt tiene un valor que byte no soporta
+         varShort  = varInt;  //Valido teniendo en cuenta la primera expresion #1
       }
    
    /**
@@ -72,7 +71,11 @@ package es.unileon.prg.tema5;
          int varInt;
          long varLong;
       
-         varLong=35000L;
+         varLong = 35000L;
+		 varByte = (byte)varLong;
+		 varShort = (short)varLong;
+		 varInt = (long)varLong;
+		 System.out.println("L: " + varLong + "B: " + varByte + "L: "+ varShort);
       // Fin modificacion
       }
    
@@ -130,7 +133,7 @@ package es.unileon.prg.tema5;
          System.out.println("Short : " + s);    
          System.out.println("Int   : " + i);
       
-         float f = 1.3e22;   
+         double f = 1.3e22;   
          System.out.println("f: " + f);    
       }
    }

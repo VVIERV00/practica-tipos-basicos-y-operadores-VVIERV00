@@ -83,18 +83,27 @@ public class Apartado030101 extends Apartado {
 		cabecera("03", "Definicion de variables");
 
 		// Inicio modificacion
-
 		//Numero de asignaturas de un curso
+		int asignaturas;
 		//Nota media de la asignatura
+		byte notaMedia;
 		//Edad de una persona
+		byte edad;
 		//Salario mensual de un empleado
+		short salario;
 		//Nombre de una asignatura
+		char name; //No sé cómo se trabaja con strings...
 		//Constante PI
+		double PI;
 		//Constante VERDADERO
+		boolean verdadero;
+		verdadero = true;
 		//Portal de la direccion de una vivienda
+		byte portal;
 		//Piso de la direccion de una vivienda
+		byte piso;
 		//Puerta la direccion de una vivienda
-
+		byte puerta;
 		// Fin modificacion
 	}
 

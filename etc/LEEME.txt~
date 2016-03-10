@@ -2,11 +2,195 @@ Practica P-VAR
 
 Alumno: Víctor de Vierna Valcarce
 
-Horas dedicadas: 4h
+Horas dedicadas: 4h 
 
 Problemas surgidos al realizar la practica:
 
  	1. Cuando Ant hace compilar a javac, éste devuelve numerosos errores que he ido revisando uno por uno. Los errores más comunes son de asignación de valores (dar int a un numero real, char's con más de un caracter, dar byte a una cadena demasiado grande...) también faltó inicializar ciertas variables o se utilizó malamente los valores reconocibles por Java como variables creadas.
- 	2. No fui capaaz de realizar un push al repositorio pero si a un fork improvisado de éste, que ahora deberé restaurar al servidor origin. 
+ 	2. No fui capaaz de realizar un push al repositorio pero si a un fork improvisado de éste, que ahora deberé restaurar al servidor origin.
+
+ //git remote -v me muestra los dos y puedo hacer push a cualquiera de ellos//
+
+	3. "incompatible types: possible lossy conversion from double to float":  float f = 1.3e22;
+		no entiendo por que 1.3e22 supone que es double (¿Será por la 'e'?)
+	4. Asignar una variable a otra de distinto tipo.
 
 Respuestas a la preguntas:
+	Google y la ayuda de los profesores son la solución de los problemas.
+
+
+3.1.1
+	1
+
+		int entero = 6;
+		float otroEntero = 1.000f;
+		float decimal = (float) 7.0;
+		double otroDecimal = 7.0;
+		short enteroDe8Bits = 10000;
+		char caracter = 'a';
+		char otroCaracter = 'a';
+		boolean booleano = true;
+		int enteroDe16Bits = 50000;
+		byte statico = 5;
+		byte intero = 3;
+		double _otra_Variable = 2.0;
+
+	2
+
+  		int variable1 = 637;
+		int variable2 = 637;
+		float variable3 = 6.37f;
+		float variable4 = 6.37f;
+		float variable5 = 6.37f;
+		char variable6 = '6';
+		char variable7 = '6';
+		char variable8 = 'a';
+		char variable9 = 'a';
+		boolean variable10 = true;
+
+	3
+
+		int asignaturas;
+		//Nota media de la asignatura
+		byte notaMedia;
+		//Edad de una persona
+		byte edad;
+		//Salario mensual de un empleado
+		short salario;
+		//Nombre de una asignatura
+		char name; //No sé cómo se trabaja con strings...
+		//Constante PI
+		double PI;
+		//Constante VERDADERO
+		boolean verdadero;
+		verdadero = true;
+		//Portal de la direccion de una vivienda
+		byte portal;
+		//Piso de la direccion de una vivienda
+		byte piso;
+		//Puerta la direccion de una vivienda
+		byte puerta;
+
+	4
+		El resultado impreso es
+ 		2.8 - 1.5 = 1.2999999999999998
+
+		Lo extraño del resultado es el numero de decimales: El objeto resultado (= valor1 - valor2) es y se ha construido, con doubles.
+
+	5
+
+		El resultado impreso es
+		2.8 - 1.5 = 1.3
+		Que es el resultado que todos esperamos. Se ha empleado la clase BigDecimal del paquete math y su método substract.
+
+
+
+3.1.2
+
+
+	1 
+
+		final int CONST=128;
+		int op1 = 2;
+		int op2;
+		int resultado;
+		//Preincrementa op1 y multiplicalo por 12
+		op1 = op1 * 12;
+		//El valor de op2 es la suma op1 predecrementado con CONST
+		op2 = op1 + CONST;
+		//Halla el resto de dividir op2 entre op1 y guardalo en resultado
+		resultado = op2 / op1;
+		System.out.println("resultado = " + resultado);
+
+	
+	2
+	
+
+		int edad =33;
+		int numeroPartes = 2;
+		boolean deportivo = false;
+		boolean rebaja;
+		if (((edad>40) && (edad<60) && (numeroPartes <= 3)) || ((deportivo == false) && (edad > 20) && (numeroPartes <= 1))){
+			rebaja = true;
+			} else{
+		rebaja = false;
+					}
+		System.out.println("Rebaja = " + rebaja);
+
+		the valour printed was 'false' whats's 'truly' a success
+
+
+	3
+
+		int segundos, horas, minutos;
+		int totalSegundos=56000;
+		segundos = totalSegundos%60;
+		minutos = (totalSegundos/60)%60;
+		horas = (totalSegundos/3600)%60;
+		// Realizacion de calculos
+		System.out.println(horas+"h "+minutos+"m "+segundos+"s ");
+
+		the printed expresion was correct: 15 horas, 33 minutos y 20 segundos (agrees with a recent program i wrote in C)
+
+	
+3.1.3
+
+
+	1
+
+		double numero;
+		numero = Math.sqrt(256);
+
+	2
+
+		double numer;
+		numer = Math.pow(9, 3);
+
+	3
+		int resultado = Math.random()*15 + 5); 
+		System.out.println("Numero aleatorio: " + resultado);
+		
+
+	4
+
+		double area;
+		double radio = 10;
+		double res = 3.14 * Math.pow(radio, 2));
+		System.out.println("La superficie es: " + res);
+
+
+3.1.4
+
+
+	1
+
+		varInt    = varShort; //Valido  #1
+         varDouble = varFloat; //Valido 
+         varFloat  = varLong; //No valido, estamos atribuyendo un valor int a una variable float
+         varLong   = varInt; //Valido
+         varLong   = 9223372036854775807L; //Valido
+         varFloat  = varLong; //No valido, estamos atribuyendo un valor int a una variable float
+         varByte   = varShort; //varInt tiene un valor que byte no soporta
+         varShort  = varInt;  //Valido teniendo en cuenta la primera expresion #1
+
+	2
+
+		    varLong = 35000L;
+		 varLong = varByte;
+		 varByte = varLong;
+		 varShort = varLong;
+		 var Int = varLong;
+		 System.out.println("L: " varLong + "B: " varByte + "L: " varShort);
+	3	
+
+		
+
+
+
+
+
+
+
+
+
+
