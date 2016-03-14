@@ -214,8 +214,8 @@ Respuestas a la preguntas:
      	[java] Int   : -2147483646
      	[java] f: 1.3E22
 
-		Tras la evaluación de los mismos, llego a la conclusión de que cuando un valor se sale del rango de su tipo
-		el valor que devuelve es el resto del valor X mód (type); por ejemplo el valor 130 desborda en :byte: por dos unidades,
+		Tras la evaluación de los mismos, llego a la conclusión de que cuando un valor se sale 	del rango de su tipo
+		el valor que devuelve es el resto del valor X mód (type); por ejemplo el valor 130 	desborda en :byte: por dos unidades,
 		y el valor que nos devuelve es el de la segunda unidad en su rango el [-128, -127, --> -126 <--, ...127].
 
 

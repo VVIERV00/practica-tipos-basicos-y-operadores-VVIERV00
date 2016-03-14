@@ -1,0 +1,196 @@
+3.1.5
+
+
+
+	1
+
+		
+
+
+
+	2
+         a
+
+		System.out.println(cadena.compareTo(otraCadena));
+		System.out.println(cadena.compareToIgnoreCase(otraCadena));
+
+		PRINTED: 
+	
+		32 (which means 'cadena' is lexicographically greater than the string argument
+		0 (which means they are lexicographically identicalls (ignoring case)
+
+		b
+
+		System.out.println(cadena.toLowerCase().compareTo(otraCadena.toLowerCase()));	
+		
+		PRINTED:
+		0 (they are now equal at all)
+	
+
+	3
+		
+		 String cadena2 = cadena + otraCadena;
+		 String cadena3 = cadena.concat(otraCadena);
+	 	 System.out.println("Cadena2: " + cadena2 + "Cadena3: " + cadena3);
+		PRINTED:
+		Cadena2: Viaje al ParnasoPersiles y SegismundaCadena3: Viaje al ParnasoPersiles y Segismunda
+
+
+	4
+
+		System.out.println("A: " + cadena.endsWith("Parnaso") + " B: " + cadena.startsWith("Viaje"));
+		
+		PRINTED: A: true B: true
+
+	5	
+
+		System.out.println("P: " + cadena.indexOf("p")); // -1 = 'NO' (Should be P) -case matters 
+		 System.out.println("Par: " + cadena.contains("Par"));   //Par: true
+		 System.out.println("A p3: " + cadena.indexOf("a", 3)); // 6
+
+
+	6
+		
+		 System.out.println("A: " + cadena.replace("a", "*"));
+		 System.out.println("B: " + cadena.replace("Parnaso", "Olimpo"));
+	
+		 [java] A: Vi*je *l P*rn*so
+	     [java] B: Viaje al Olimpo
+
+		
+	7
+	
+		 System.out.println("Mitad final: " + cadena.substring(8));
+		 System.out.println("j-s: " + cadena.subSequence(cadena.indexOf("j"), cadena.indexOf("s")));
+
+			PRINTSS:
+		
+   			[java] Mitad final:  Parnaso
+ 	        [java] j-s: je al Parna
+
+
+	8
+
+		System.out.println("Original:" + cadena + "Cambiada:" + cadena.trim());
+
+		PRINTED: [java] Original: La Galatea  Cambiada:La Galatea
+
+
+	9
+
+		 System.out.println("Valor: " + String.valueOf(numero));
+ 		 System.out.println("Valor: " + String.valueOf(expresion));
+		 System.out.println("Valor: " + String.valueOf(enteroGrande));
+
+		PRINTED:
+
+		[java] Valor: 1.12E12
+        [java] Valor: true
+        [java] Valor: 1231231
+ 
+
+	10
+	
+		 System.out.println(cadena.compareTo(otraCadena));
+	
+		PRINTED:
+		
+		1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

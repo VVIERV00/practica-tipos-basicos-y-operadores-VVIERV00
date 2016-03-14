@@ -12,7 +12,7 @@ Problemas surgidos al realizar la practica:
  //git remote -v me muestra los dos y puedo hacer push a cualquiera de ellos//
 
 	3. "incompatible types: possible lossy conversion from double to float":  float f = 1.3e22;
-		no entiendo por que 1.3e22 supone que es double (¿Será por la 'e'?)
+		no entiendo por que 1.3e22 es double.
 	4. Asignar una variable a otra de distinto tipo.
 
 Respuestas a la preguntas:
